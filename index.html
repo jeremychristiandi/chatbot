@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+
+    <link rel="stylesheet" href="./chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>Chatbot Messanger: Helping you answer your questions!</h1>
+    </div>
+    <div class="chat-bar-popup">
+        <button id="chat-button" class="popup">Chat with us!
+            <i id="chat-icon" class="fa fa-fw fa-comments-o" style="color: dimgray;"></i>
+        </button>
+
+        <div class="content">
+            <div class="chat-block">
+                <div class="outer-container">
+                    <div class="inner-container">
+                        <div id="chat-box">
+                            <h5 id="display-time"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <div class="chat-input">
+                            <div id="user-input">
+                                <input id="textInput" class="input-box" type="text" name="msg" placeholder="Hit enter to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="send-icon">
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send" onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="./answers.js"></script>
+<script src="./chat.js"></script>
+
+</html>
